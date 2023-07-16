@@ -1,0 +1,3 @@
+CREATE SCHEMA IF NOT EXISTS "admin_schema";
+CREATE SCHEMA IF NOT EXISTS "system_schema";
+DROP SCHEMA IF EXISTS "public";
