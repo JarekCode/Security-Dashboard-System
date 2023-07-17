@@ -9,7 +9,8 @@ services:
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: postgres
     ports:
-      - "5432:5432"
+      - 5432:5432
+    command: postgres -c listen_addresses='*'
     volumes:
       - ./sql/init.sql:/docker-entrypoint-initdb.d/1-init.sql
       - ./postgres_data:/var/lib/postgresql/data
